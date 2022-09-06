@@ -1,0 +1,19 @@
+# Pytest
+__pycache__/
+.pytest_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VScode
+.vscode/
+*.code-workspace
+
+# Creds
+creds.json
