@@ -1,5 +1,5 @@
 # test_SpreadsheetAPI
-###[spreadsheet для тестов](https://docs.google.com/spreadsheets/d/1uRuwSNBwgPXXeemF2GVtYIm_zJu4qUexnozqLa-2PkU/edit?usp=sharing)
+[spreadsheet для тестов](https://docs.google.com/spreadsheets/d/1uRuwSNBwgPXXeemF2GVtYIm_zJu4qUexnozqLa-2PkU/edit?usp=sharing)
 ## Уязвимости, баги и замечания
 1. На мой взгляд, функции get_sheet и get должны возвращать данные из ключа 'values' в виде "списков в списке". Для словаря с ключами 'majorDimension', 'range' и 'values' лучше сделать отдельную функцию 'get_raw_data'. Тесты для get_sheet и get написаны с учетом этой идеи (то есть ожидаемо валятся).
 2. Нужна обработка ситуации, где мы пытаемся получить данные из пустой ячейки, - то есть получаем в ответе словарь, в котором нет ключа 'values'.
