@@ -1,4 +1,6 @@
 # test_SpreadsheetAPI
+## Описание
+В этом проекте я выполнил тестовое задание на позицию тестировщика, задачей было подключиться к Google Spreadsheet API, написать тесты для функций класса SpreadsheetAPI и вспомогательные функции, а также написать список уязвимостей и багов.
 [spreadsheet для тестов](https://docs.google.com/spreadsheets/d/1uRuwSNBwgPXXeemF2GVtYIm_zJu4qUexnozqLa-2PkU/edit?usp=sharing)
 ## Уязвимости, баги и замечания
 1. На мой взгляд, функции get_sheet и get должны возвращать данные из ключа 'values' в виде "списков в списке". Для словаря с ключами 'majorDimension', 'range' и 'values' лучше сделать отдельную функцию 'get_raw_data'. Тесты для get_sheet и get написаны с учетом этой идеи (то есть ожидаемо валятся).
